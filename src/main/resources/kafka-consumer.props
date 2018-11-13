@@ -1,0 +1,8 @@
+topic=HwxAvroTest1
+bootstrap.servers=hwx.kafka.com:9100
+schema.registry.url=http://hwx.sr.com:7788/api/v1
+key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+value.deserializer=com.hortonworks.registries.schemaregistry.serdes.avro.kafka.KafkaAvroDeserializer
+group.id=HwxAvroSchema1
+auto.offset.reset=earliest
+security.protocol=SASL_PLAINTEXT

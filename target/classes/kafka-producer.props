@@ -1,0 +1,7 @@
+topic=HwxAvroTest2
+bootstrap.servers=hwx.kafka.com:9100
+schema.registry.url=http://hwx.sr.com:7788/api/v1
+security.protocol=SASL_PLAINTEXT
+key.serializer=org.apache.kafka.common.serialization.StringSerializer
+value.serializer=com.hortonworks.registries.schemaregistry.serdes.avro.kafka.KafkaAvroSerializer
+ignoreInvalidMessages=true

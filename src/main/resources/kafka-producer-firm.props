@@ -1,0 +1,6 @@
+topic=HwxAvroSchema2
+bootstrap.servers=hwx.kafka.com:9100
+schema.registry.url=http://ip-172-30-147-130.saccap.int:7788/api/v1
+security.protocol=SASL_PLAINTEXT
+key.serializer=org.apache.kafka.common.serialization.StringSerializer
+ignoreInvalidMessages=true

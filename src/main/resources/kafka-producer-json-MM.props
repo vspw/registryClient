@@ -1,0 +1,6 @@
+topic=testTopicMM2
+bootstrap.servers=hwx.kafka.com:9100
+security.protocol=SASL_PLAINTEXT
+key.serializer=org.apache.kafka.common.serialization.StringSerializer
+value.serializer=org.apache.kafka.common.serialization.StringSerializer
+ignoreInvalidMessages=true

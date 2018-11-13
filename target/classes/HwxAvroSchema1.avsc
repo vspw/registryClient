@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "namespace": "hwx.avro.schema1",
+  "name": "HwxAvroSchema1",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    }
+  ]
+}

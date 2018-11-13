@@ -1,0 +1,44 @@
+{
+  "type" : "record",
+  "name" : "AccountByCode",
+  "namespace" : "myorg.account",
+  "doc" : "AccountDoc Lookup Stream",
+  "fields" : [ {
+    "name" : "code",
+    "type" : "string",
+    "doc" : "book code"
+  }, {
+    "name" : "idHistory",
+    "type" : {
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "name" : "EffectiveString",
+        "namespace" : "myorg.type",
+        "fields" : [ {
+          "name" : "effectiveStartDate",
+          "type" : {
+            "type" : "int",
+            "logicalType" : "date"
+          },
+          "default" : 0
+        }, {
+          "name" : "effectiveEndDate",
+          "type" : {
+            "type" : "int",
+            "logicalType" : "date"
+          },
+          "default" : 0
+        }, {
+          "name" : "value",
+          "type" : [ "string", "null" ]
+        } ],
+        "logicalType" : "EffectiveString"
+      }
+    },
+    "doc" : "id history"
+  } ],
+  "uid" : "112",
+  "version" : "0",
+  "root" : "true"
+}

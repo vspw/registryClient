@@ -1,0 +1,6 @@
+topic=topicdev-4
+bootstrap.servers=hwx.kafka.com:9100
+key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+group.id=HwxJsonUXTF
+security.protocol=SASL_PLAINTEXT

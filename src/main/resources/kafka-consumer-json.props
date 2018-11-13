@@ -1,0 +1,6 @@
+topic=1topic
+bootstrap.servers=hwx.kafka.com:9100
+key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+group.id=HwxJson2
+security.protocol=SASL_PLAINTEXT
