@@ -170,7 +170,7 @@ public class SampleSchemaRegistryClientApp {
 
 		Object deviceObject = createGenericRecordForDevice("/device.avsc");
 
-		SchemaMetadata schemaMetadata = createSchemaMetadata("avro-serializer-schema-p72");
+		SchemaMetadata schemaMetadata = createSchemaMetadata("avro-serializer-schema");
 		byte[] serializedData = serializer.serialize(deviceObject, schemaMetadata);
 		Object deserializedObj = deserializer.deserialize(new ByteArrayInputStream(serializedData), null);
 
@@ -187,7 +187,7 @@ public class SampleSchemaRegistryClientApp {
 		}
 		String fileId = schemaRegistryClient.uploadFile(serdesJarInputStream);
 
-		SchemaMetadata schemaMetadata = createSchemaMetadata("serdes-device-p72");
+		SchemaMetadata schemaMetadata = createSchemaMetadata("serdes-device");
 		SchemaIdVersion v1 = schemaRegistryClient.addSchemaVersion(schemaMetadata,
 				new SchemaVersion(getSchema("/device.avsc"),
 						"Initial version of the schema"));
