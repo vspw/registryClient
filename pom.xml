@@ -71,46 +71,6 @@
 			<version>1.7.12</version>
 		</dependency>
 
-		<!-- firm-schema -->
-		<dependency>
-			<groupId>firm-schema</groupId>
-			<artifactId>firm-schema</artifactId>
-			<version>3072.0.1.246</version>
-
-		</dependency>
-       <!-- firm-schema-kafka-serde -->
-		<dependency>
-			<groupId>firm-schema</groupId>
-			<artifactId>firm-schema-kafka-serde</artifactId>
-			<version>3072.0.1.34</version>
-			<exclusions>
-				<exclusion>
-					<groupId>firm-schema</groupId>
-					<artifactId>firm-schema-common</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<!-- Remote Schema Registry -->
-
-<!-- 	    firm-schema-common
-		<dependency>
-			<groupId>firm-schema</groupId>
-			<artifactId>firm-schema-common</artifactId>
-			<version>3072.0.1.22</version>
-		</dependency> -->
-
-	<dependency>
-		<groupId>firm-common</groupId>
-		<artifactId>firm-spring-binder</artifactId>
-		<version>3085.1.0.105</version>
-		<exclusions>
-			<exclusion>
-				<groupId>firm-schema</groupId>
-				<artifactId>firm-schema-common</artifactId>
-			</exclusion>
-		</exclusions>
-	</dependency>
-
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
@@ -146,13 +106,6 @@
             <version>0.10.1.0</version>
         </dependency>
 
-          <!-- kafka embedded test -->
-          <dependency>
-              <groupId>firm.common</groupId>
-              <artifactId>firm.common.embedded.kafka</artifactId>
-              <version>3115.0.0.5</version>
-              <type>test-jar</type>
-          </dependency>
 
 
 <dependency>
