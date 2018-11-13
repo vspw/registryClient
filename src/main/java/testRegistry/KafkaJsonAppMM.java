@@ -22,7 +22,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hortonworks.registries.schemaregistry.serde.SerDesException;
 import com.hortonworks.registries.schemaregistry.serdes.avro.SerDesProtocolHandlerRegistry;
 
-import firm.schema.kafka.serde.RecordSerializer;
 import kafka.api.TopicMetadataRequest;
 
 import org.apache.avro.Schema;
